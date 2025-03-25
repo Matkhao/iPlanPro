@@ -1,0 +1,1254 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <!-- โลโก้ Apple -->
+            <ImageView
+                android:id="@+id/apple_logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Apple Logo"
+                android:src="@drawable/logoapple"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+            android:paddingLeft="10dp"
+            android:text="ทำความรู้จักกับ iPhone"
+            android:textColor="#1d1c1e"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <FrameLayout
+                    android:layout_width="220dp"
+                    android:layout_height="300dp"
+                    android:background="@drawable/rounded_background"
+                    android:clipToOutline="true"
+                    android:elevation="4dp">
+
+                    <!-- ภาพ background -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/human" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                            android:text="กล้องสุดล้ำ"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                            android:text="เห็นภาพเลยว่ารูปภาพ\nและวิดีโอที่ดีที่สุดจะเป็นยังไง"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="220dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:clipToOutline="true"
+                    android:elevation="4dp">
+
+                    <!-- ภาพ background -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chip" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                            android:text="ชิปและแบตเตอรี่"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                            android:text="เร็วดีไม่มีตก"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="220dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/rounded_background"
+                    android:clipToOutline="true"
+                    android:elevation="4dp">
+
+                    <!-- ภาพ background -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/rounded_background"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/screen" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                            android:text="นวัตกรรม"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                            android:text="ดีไซน์มาให้ทั้งสวยงามและทนทาน"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+            android:paddingStart="10dp"
+            android:text="เครื่องมือคำนวณค่าใช้จ่าย"
+            android:textColor="#1d1c1e"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+            android:text="ประเมินค่าใช้จ่ายเบื้องต้นสำหรับบริการต่าง ๆ ของคุณ"
+            android:textColor="#017bd8"
+            android:textSize="16sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="140dp"
+                    android:layout_marginEnd="12dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="onTradeInClicked"
+                    app:cardBackgroundColor="#F8F8F9"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="icon"
+                            android:src="@drawable/change" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                            android:text="iPhone Trade-In"
+                            android:textColor="#1D1D1F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                            android:text="คำนวณส่วนต่างอัปเกรดจากการแลกเครื่องเดิม"
+                            android:textColor="#4B4B4B"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="140dp"
+                    android:layout_marginEnd="12dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="onBatteryClicked"
+                    app:cardBackgroundColor="#F8F8F9"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="icon"
+                            android:src="@drawable/battery" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                            android:text="Battery Replacement"
+                            android:textColor="#1D1D1F"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                            android:text="คำนวณค่าใช้จ่ายเปลี่ยนแบตเตอรี่"
+                            android:textColor="#4B4B4B"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="140dp"
+                    android:layout_marginEnd="12dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="onBudgetPlannerClicked"
+                    app:cardBackgroundColor="#F8F8F9"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="icon"
+                            android:src="@drawable/money" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                            android:text="Budget Planner"
+                            android:textColor="#1D1D1F"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                            android:text="วางแผนซื้อ iPhone ตามงบประมาณ ช่วยให้คุณไม่ใช้เงินเกินตัว"
+                            android:textColor="#4B4B4B"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <!-- ส่วนหัว -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="30dp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+            android:text="ดูข้อมูลผลิตภัณฑ์ตระกูลนี้"
+            android:textColor="#1d1c1e"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+            android:text="เลือก iPhone ที่ใช่สำหรับคุณ"
+            android:textColor="#017bd8"
+            android:textSize="16sp" />
+
+        <!-- ส่วนที่เลื่อนซ้าย-ขวาได้ -->
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal">
+
+                <!-- iphone 16 pro -->
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/iphone16promax" />
+
+                    <!-- ถาดสี -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#b99783" />
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#bdb4a8" />
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#f5f3ed" />
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#3c3c3c" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:paddingBottom="10dp"
+                        android:text="iPhone 16 Pro"
+                        android:textColor="#1d1c1e"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:paddingBottom="7dp"
+                        android:text="ที่สุดของ iPhone"
+                        android:textColor="#1d1c1e" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="เรื่มต้นที่ ฿39,900"
+                        android:textColor="#1d1c1e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/a18pro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="ชิป A18 Pro พร้อม GPU แบบ 6‑core"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ai" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="สร้างมาเพื่อ Apple Intelligence"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/button" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="ตัวควบคุมกล้อง"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/camerapro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="ระบบกล้องระดับโปร"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="กล้อง Fusion 48MP"
+                        android:textAlignment="center"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="กล้องเทเลโฟโต้ 5 เท่า"
+                        android:textAlignment="center"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="กล้องอัลตร้าไวด์ 48MP"
+                        android:textAlignment="center"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/battery" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="เล่นวิดีโอนานสูงสุด 33 ชั่วโมง"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <!-- ถาดสี -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/iphone16" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#95a5ea" />
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#abcfcd" />
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#eda9d4" />
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#f4f5f4" />
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#35393b" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:paddingBottom="10dp"
+                        android:text="iPhone 16"
+                        android:textColor="#1d1c1e"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:paddingBottom="7dp"
+                        android:text="ขุมพลังครบเครื่อง"
+                        android:textColor="#1d1c1e" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="เรื่มต้นที่ ฿29,900"
+                        android:textColor="#1d1c1e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/a18" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="ชิป A18 พร้อม GPU แบบ 5‑core"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ai" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="สร้างมาเพื่อ Apple Intelligence"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/button" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="ตัวควบคุมกล้อง"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cameraplus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="ระบบกล้องคู่สุดล้ำ"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="กล้อง Fusion 48MP"
+                        android:textAlignment="center"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="เทเลโฟโต้ 2 เท่า"
+                        android:textAlignment="center"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="กล้องอัลตร้าไวด์ 12MP"
+                        android:textAlignment="center"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/battery" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="เล่นวิดีโอนานสูงสุด 27 ชั่วโมง"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <!-- iphone 16e -->
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/iphone16e" />
+
+                    <!-- ถาดสี -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#f4f5f4" />
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#35393b" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:paddingBottom="10dp"
+                        android:text="iPhone 16e"
+                        android:textColor="#1d1c1e"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:paddingBottom="7dp"
+                        android:text="ใหม่ล่าสุด ในราคาที่ดีที่สุด"
+                        android:textColor="#1d1c1e" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="เรื่มต้นที่ ฿22,900"
+                        android:textColor="#1d1c1e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/a18" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="ชิป A18 พร้อม GPU แบบ 4-core"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ai" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="สร้างมาเพื่อ Apple Intelligence"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/button"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="—"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/camerae" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="ระบบกล้องแบบทูอินวัน"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="กล้อง Fusion 48MP"
+                        android:textAlignment="center"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="เทเลโฟโต้ 2 เท่า"
+                        android:textAlignment="center"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="—"
+                        android:textAlignment="center"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/battery" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="เล่นวิดีโอนานสูงสุด 26 ชั่วโมง"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!-- iphone 15 -->
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/iphone15" />
+
+                    <!-- ถาดสี -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#ebd0d2" />
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#ede6c7" />
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#cfd9c9" />
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#d4dde1" />
+
+                        <View
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="#3d4142" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:paddingBottom="10dp"
+                        android:text="iPhone 15"
+                        android:textColor="#1d1c1e"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:paddingBottom="7dp"
+                        android:text="น่าทึ่งอย่างที่เคย"
+                        android:textColor="#1d1c1e" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="เรื่มต้นที่ ฿26,900"
+                        android:textColor="#1d1c1e"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/a16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="ชิป A16 Bionic GPU 5‑core"
+                        android:textAlignment="center"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ai"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="—"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/button"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="—"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/camera15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="ระบบกล้องคู่"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="กล้องหลัก 48MP"
+                        android:textAlignment="center"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="เทเลโฟโต้ 2 เท่า"
+                        android:textAlignment="center"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="กล้องอัลตร้าไวด์"
+                        android:textAlignment="center"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/battery" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                        android:text="เล่นวิดีโอนานสูงสุด 26 ชั่วโมง"
+                        android:textColor="#1d1c1e"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#DADADA" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+            android:text="© Copyright 2025. iPlan Pro"
+            android:textAlignment="center"
+            android:textColor="#1d1c1e"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</ScrollView>
