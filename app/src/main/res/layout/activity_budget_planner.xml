@@ -102,11 +102,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
                     android:text="เราจะแนะนำ iPhone ที่เหมาะสมภายในงบของคุณ"
                     android:textColor="#333333"
-                    android:textSize="14sp" />
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                    android:text="งบประมาณ"
+                    android:textColor="#1D1D1F"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/budgetInput"

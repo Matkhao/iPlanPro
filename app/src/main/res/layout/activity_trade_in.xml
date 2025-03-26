@@ -106,6 +106,16 @@
                     android:textColor="#333333"
                     android:textSize="14sp" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                    android:text="รุ่นเก่า"
+                    android:textColor="#1D1D1F"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
                 <Spinner
                     android:id="@+id/oldModelSpinner"
                     android:layout_width="match_parent"
@@ -113,6 +123,16 @@
                     android:background="@drawable/spinner_background"
                     android:padding="12dp"
                     android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/noto_sans_thai_variablefont_wdth_wght"
+                    android:text="รุ่นใหม่"
+                    android:textColor="#1D1D1F"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <Spinner
                     android:id="@+id/newModelSpinner"
